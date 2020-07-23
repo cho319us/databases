@@ -34,7 +34,6 @@ describe('Persistent Node Chat Server', function() {
       uri: 'http://127.0.0.1:3000/classes/users',
       json: { username: 'Valjean' }
     }, function () {
-      console.log('aaa');
       // Post a message to the node chat server:
       request({
         method: 'POST',
@@ -45,7 +44,6 @@ describe('Persistent Node Chat Server', function() {
           roomname: 'Hello'
         }
       }, function () {
-        console.log('bbb');
         // Now if we look in the database, we should find the
         // posted message there.
 
